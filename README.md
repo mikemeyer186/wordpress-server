@@ -87,11 +87,11 @@ docker compose down -v
 
 ## Usage
 
-The Wordpress server is configured to run with some basic settings. You can configure these settings in the `docker-compose.yml` file.
+The Wordpress server is configured to run with some basic settings. You can configure these settings in the `docker-compose.yaml` file.
 
 ### Configuration
 
-There are two services in the `docker-compose.yml` file: `wordpress` and `db`. The `wordpress` service is for the Wordpress container and the `db` service is for the MariaDB container. You can configure the following settings:
+There are two services in the `docker-compose.yaml` file: `wordpress` and `db`. The `wordpress` service is for the Wordpress container and the `db` service is for the MariaDB container. You can configure the following settings:
 
 #### Wordpress Service
 
