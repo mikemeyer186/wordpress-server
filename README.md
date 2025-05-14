@@ -41,19 +41,19 @@ git clone git@github.com:mikemeyer186/wordpress-server.git
 cd wordpress-server
 ```
 
-3. Create a `.env` file with the following content:
+3. Create a `.env` file with the following content or copy the `example.env` file to `.env` and replace the values:
 
 ```shell
 # WordPress
-WORDPRESS_DB_NAME=<your database name>
-WORDPRESS_DB_USER=<your database user>
-WORDPRESS_DB_PASSWORD=<your database password>
+WORDPRESS_DB_NAME=<your_database_name>
+WORDPRESS_DB_USER=<your_database_user>
+WORDPRESS_DB_PASSWORD=<your_database_password>
 
 # MariaDB
-MYSQL_ROOT_PASSWORD=<your root password>
-MYSQL_DATABASE=<your database name>
-MYSQL_USER=<your database user>
-MYSQL_PASSWORD=<your database password>
+MYSQL_ROOT_PASSWORD=<your_root_password>
+MYSQL_DATABASE=<your_database_name>
+MYSQL_USER=<your_database_user>
+MYSQL_PASSWORD=<your_database_password>
 ```
 
 > [!NOTE]
@@ -67,7 +67,7 @@ docker compose up -d
 
 5. Install Wordpress:
 
--   Open your browser and go to `http://<your host>:8080`
+-   Open your browser and go to `http://<your_host>:8080`
 -   Select your language and click on "Continue"
 -   Enter your site title, username, password and email address
 -   Click on "Install WordPress"
@@ -99,7 +99,7 @@ There are two services in the `docker-compose.yaml` file: `wordpress` and `db`. 
 -   `ports`: The ports that are exposed to the host. The default port is `8080`.
 -   `volumes`: The volumes that are mounted to the host. The default volume is `wp_data`.
 -   `networks`: The network that is used by both services containers. The default network is `wp_network`.
--   `restart`: The restart policy for the container. The default policy is `on-failure`.
+-   `restart`: The restart policy for the container. The default policy is `unless-stopped`.
 
 #### MariaDB Service
 
@@ -107,4 +107,4 @@ There are two services in the `docker-compose.yaml` file: `wordpress` and `db`. 
 -   `ports`: The ports that are exposed to the host. The default port is `3306`.
 -   `volumes`: The volumes that are mounted to the host. The default volume is `db_data`.
 -   `networks`: The network that is used by both services containers. The default network is `wp_network`.
--   `restart`: The restart policy for the container. The default policy is `on-failure`.
+-   `restart`: The restart policy for the container. The default policy is `unless-stopped`.
