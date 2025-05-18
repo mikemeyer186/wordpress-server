@@ -41,7 +41,7 @@ git clone git@github.com:mikemeyer186/wordpress-server.git
 cd wordpress-server
 ```
 
-3. Create a `.env` file with the following content or copy the `example.env` file to `.env` and replace the values:
+3. Create a `.env` file with the following content or copy the `example.env` file to `.env` and replace the unsafe values:
 
 ```shell
 # WordPress
