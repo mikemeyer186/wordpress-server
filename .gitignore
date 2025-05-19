@@ -1,0 +1,22 @@
+# Docker
+*.log
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+*_env
+.runtimeconfig.json
